@@ -7,9 +7,9 @@ interface ChallengeCardProps {
   imageSrc: string;
   status: "Upcoming" | "Active" | "Past";
   title: string;
-  timeInfo: {
-    type: "Starts in" | "Ends in" | "Ended on";
-    value: string;
+  timeInfo?: {
+    type?: "Starts in" | "Ends in" | "Ended on";
+    value?: string;
   };
 }
 
@@ -17,7 +17,7 @@ const ChallengeCard: React.FC<ChallengeCardProps> = ({
   imageSrc,
   status,
   title,
-  timeInfo,
+  timeInfo = {},  // Provide a default empty object
 }) => {
   const statusColors = {
     Upcoming: "rgba(242, 201, 76, 0.25)",
@@ -32,8 +32,8 @@ const ChallengeCard: React.FC<ChallengeCardProps> = ({
         {status}
       </span>
       <h3 css={styles.title}>{title}</h3>
-      <p css={styles.timeInfoType}>{timeInfo.type}</p>
-      <p css={styles.timeInfoValue}>{timeInfo.value}</p>
+      <p css={styles.timeInfoType}>{timeInfo.type || "Unknown"}</p> {/* Add fallback for type */}
+      <p css={styles.timeInfoValue}>{timeInfo.value || "Not available"}</p> {/* Add fallback for value */}
       <button css={styles.participateButton}>
         <img
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/d6d51c596a087240afe5dd7c5d7d57c0ffa0e5b84d7141d9026b80ea06f47984?placeholderIfAbsent=true&apiKey=5070ce5c9fb2416aac0a8fcf33e9cc20"
