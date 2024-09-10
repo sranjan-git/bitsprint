@@ -3,6 +3,7 @@ import React from "react";
 import { css } from "@emotion/react";
 import { useNavigate } from "react-router-dom";
 
+
 const Homepage: React.FC = () => {
   const navigate = useNavigate(); // Using react-router's useNavigate hook
 
