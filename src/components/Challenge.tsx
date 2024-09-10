@@ -1,16 +1,25 @@
 /** @jsxImportSource @emotion/react */
 
 import React from "react";
-import {useState, useEffect} from "react";
 import { css } from "@emotion/react";
 import ChallengeCard from "../cards/ChallengeCard";
 import { useNavigate } from "react-router-dom";
 
-const challengeData = [
+interface ChallengeCardProps {
+  imageSrc: string;
+  status: string;
+  title: string;
+  timeInfo: {
+    type: string;
+    value: string;
+  };
+}
+
+const challengeData: ChallengeCardProps[] = [
   {
     imageSrc:
       "https://cdn.builder.io/api/v1/image/assets/TEMP/83ea8640ccdcd5a75dda1971569d0f6bd270b57266248baca2d8341246f12176?placeholderIfAbsent=true&apiKey=5070ce5c9fb2416aac0a8fcf33e9cc20",
-    status: "Upcoming",
+    status: "Upcoming", // Ensure it's typed correctly
     title: "Data Science Bootcamp - Graded Datathon",
     timeInfo: {
       type: "Starts in",
@@ -69,24 +78,16 @@ const challengeData = [
   },
 ];
 
+
 const ChallengeSection: React.FC = () => {
   const navigate = useNavigate(); // Using useNavigate for navigation
-  const [challengeData, setChallengeData] = useState<any[]>([]);
-
-  // Load challenges from local storage
-  useEffect(() => {
-    const savedChallenges = localStorage.getItem('challenges');
-    if (savedChallenges) {
-      setChallengeData(JSON.parse(savedChallenges));
-    }
-  }, []);
 
   const handleParticipateClick = () => {
-    navigate("/details"); 
+    navigate("/details"); // Navigating to /details page
   };
 
   const handleFilterClick = () => {
-    navigate("/filter"); 
+    navigate("/filter"); // Navigating to /filter page
   };
 
   return (

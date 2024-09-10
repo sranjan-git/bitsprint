@@ -1,4 +1,5 @@
 /** @jsxImportSource @emotion/react */
+
 import React, { useState } from "react";
 import { css } from "@emotion/react";
 import Header from "../components/Admin/Header";
@@ -59,13 +60,6 @@ const Admin: React.FC = () => {
   const [level, setLevel] = useState<string>("");
   const [error, setError] = useState<string>("");
 
-  // State to manage challenges list
-  const [challenges, setChallenges] = useState<any[]>(() => {
-    // Initialize from localStorage if available
-    const savedChallenges = localStorage.getItem("challenges");
-    return savedChallenges ? JSON.parse(savedChallenges) : [];
-  });
-
   const handleCreate = async (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -77,23 +71,21 @@ const Admin: React.FC = () => {
 
     // Clear any existing error
     setError("");
+
     
-    const newChallenge = {
+
+    // Collect form data
+    const formData = {
       name: challengeName,
       startDate,
       endDate,
       description,
-      image, 
+      image,
       level,
     };
-  
-    // Save the challenge to state and localStorage
-    const updatedChallenges = [...challenges, newChallenge];
-    setChallenges(updatedChallenges);
-  
-    localStorage.setItem('challenges', JSON.stringify(updatedChallenges)); // Save to localStorage
-  
-    console.log("Challenge Created:", newChallenge);
+
+    // Handle form data (e.g., send to server)
+    console.log("Challenge Created:", formData);
 
     // Navigate to the home page (or another page as needed)
     navigate("/home");
