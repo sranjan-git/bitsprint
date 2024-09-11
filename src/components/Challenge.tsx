@@ -7,10 +7,10 @@ import { useNavigate } from "react-router-dom";
 
 interface ChallengeCardProps {
   imageSrc: string;
-  status: string;
+  status: "Upcoming" | "Active" | "Past";
   title: string;
   timeInfo: {
-    type: string;
+    type: "Starts in" | "Ends in" | "Ended on"; 
     value: string;
   };
 }
