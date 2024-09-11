@@ -17,8 +17,7 @@ interface ChallengeCardProps {
 
 const challengeData: ChallengeCardProps[] = [
   {
-    imageSrc:
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/83ea8640ccdcd5a75dda1971569d0f6bd270b57266248baca2d8341246f12176?placeholderIfAbsent=true&apiKey=5070ce5c9fb2416aac0a8fcf33e9cc20",
+    imageSrc:"/assets/cardImage/1.png",
     status: "Upcoming", // Ensure it's typed correctly
     title: "Data Science Bootcamp - Graded Datathon",
     timeInfo: {
@@ -27,8 +26,7 @@ const challengeData: ChallengeCardProps[] = [
     },
   },
   {
-    imageSrc:
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/eb61a918f534672444d3bd4d5678b30446b3bf5675f7e0a2233b9e186f7124bb?placeholderIfAbsent=true&apiKey=5070ce5c9fb2416aac0a8fcf33e9cc20",
+    imageSrc:"/assets/cardImage/2.png",
     status: "Upcoming",
     title: "Data Sprint 72 - Butterfly Identification",
     timeInfo: {
@@ -37,8 +35,7 @@ const challengeData: ChallengeCardProps[] = [
     },
   },
   {
-    imageSrc:
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/03a9416cc8fc4cdf7f41ae0cb11af758bf1918dac5333b97426fd31352cb8cdb?placeholderIfAbsent=true&apiKey=5070ce5c9fb2416aac0a8fcf33e9cc20",
+    imageSrc:"/assets/cardImage/3.png",
     status: "Active",
     title: "Data Sprint 71 - Weather Recognition",
     timeInfo: {
@@ -47,8 +44,7 @@ const challengeData: ChallengeCardProps[] = [
     },
   },
   {
-    imageSrc:
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/d6dc272945481ab55c551ecf79be58941d3b01e5969a961399c13090d574dbbd?placeholderIfAbsent=true&apiKey=5070ce5c9fb2416aac0a8fcf33e9cc20",
+    imageSrc:"/assets/cardImage/4.png",
     status: "Active",
     title: "Data Sprint 70-Airline Passenger Satisfaction",
     timeInfo: {
@@ -57,8 +53,7 @@ const challengeData: ChallengeCardProps[] = [
     },
   },
   {
-    imageSrc:
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/fb4d9fc7d1b854dfb993180bbb4ca3f6e8d68db24da80df6c59b0539c6110695?placeholderIfAbsent=true&apiKey=5070ce5c9fb2416aac0a8fcf33e9cc20",
+    imageSrc:"/assets/cardImage/5.png",
     status: "Past",
     title: "Engineering Graduates Employment Outcomes",
     timeInfo: {
@@ -67,8 +62,7 @@ const challengeData: ChallengeCardProps[] = [
     },
   },
   {
-    imageSrc:
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/3dbb97d3efe1d092ab78b846a14d4d55e49cd0773d91221634b690069a485ae6?placeholderIfAbsent=true&apiKey=5070ce5c9fb2416aac0a8fcf33e9cc20",
+    imageSrc:"/assets/cardImage/6.png",
     status: "Past",
     title: "Travel Insurance Claim Prediction",
     timeInfo: {

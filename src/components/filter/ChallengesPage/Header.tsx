@@ -2,8 +2,14 @@
 
 import React from "react";
 import { css } from "@emotion/react";
+import { useNavigate } from "react-router-dom";
 
 const Header: React.FC = () => {
+  const navigate = useNavigate(); // Using react-router's useNavigate hook
+
+  const handleCreateChallenge = () => {
+    navigate("/admin"); // Navigate to the ChallengeDetails page
+  };
   return (
     <header css={styles.header}>
       <div css={styles.logoContainer}>
@@ -25,7 +31,7 @@ const Header: React.FC = () => {
           place to put your AI/Data Science skills to test on diverse datasets
           allowing you to foster learning through competitions.
         </p>
-        <button css={styles.createButton}>Create Challenge</button>
+        <button css={styles.createButton} onClick={handleCreateChallenge}>Create Challenge</button>
       </div>
     </header>
   );

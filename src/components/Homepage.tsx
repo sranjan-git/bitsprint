@@ -13,21 +13,26 @@ const Homepage: React.FC = () => {
 
   return (
     <header css={styles.header}>
-      <div css={styles.content}>
-        <div css={styles.accentBar} />
-        <div css={styles.textContent}>
+      <div css={styles.logoContainer}>
+        <img
+          src="/assets/icons/13.svg"
+          alt="Company Logo"
+          css={styles.logo}
+        />
+      </div>
+      <div css={styles.headerContent}>
+        <div css={styles.titleContainer}>
+          <div css={styles.yellowBar}></div>
           <h1 css={styles.title}>
             Accelerate Innovation with Global AI Challenges
           </h1>
-          <p css={styles.description}>
-            AI Challenges at DPhi simulate real-world problems. It is a great
-            place to put your AI/Data Science skills to test on diverse datasets
-            allowing you to foster learning through competitions.
-          </p>
-          <button css={styles.ctaButton} onClick={handleCreateChallenge}>
-            Create Challenge
-          </button>
         </div>
+        <p css={styles.description}>
+          AI Challenges at DPhi simulate real-world problems. It is a great
+          place to put your AI/Data Science skills to test on diverse datasets
+          allowing you to foster learning through competitions.
+        </p>
+        <button css={styles.createButton} onClick={handleCreateChallenge}>Create Challenge</button>
       </div>
     </header>
   );
@@ -35,77 +40,65 @@ const Homepage: React.FC = () => {
 
 const styles = {
   header: css`
-    background-color: rgba(0, 49, 69, 1);
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    padding: 109px 70px;
+    background-color: #003145;
+    padding-bottom: 93px;
+    @media (max-width: 991px) {
+      padding-bottom: 40px;
+    }
+  `,
+  logoContainer: css`
+    background-color: #fff;
+    padding: 13px 80px;
+    @media (max-width: 991px) {
+      padding: 13px 20px;
+    }
+  `,
+  logo: css`
+    width: 87px;
+    object-fit: contain;
+  `,
+  headerContent: css`
+    max-width: 705px;
+    margin: 124px 0 0 143px;
     font: 600 18px Poppins, sans-serif;
     @media (max-width: 991px) {
-      max-width: 100%;
-      padding: 100px 20px;
+      margin: 40px 20px 0;
     }
   `,
-  content: css`
+  titleContainer: css`
     display: flex;
-    width: 682px;
-    max-width: 100%;
-    gap: 40px 52px;
-    flex-wrap: wrap;
+    gap: 52px;
   `,
-  accentBar: css`
-    background-color: rgba(255, 206, 92, 1);
-    align-self: start;
+  yellowBar: css`
+    background-color: #ffce5c;
     width: 10px;
-    height: 117px;
-  `,
-  textContent: css`
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    flex-grow: 1;
-    flex-basis: 0;
-    @media (max-width: 991px) {
-      max-width: 100%;
-    }
+    height: 116px;
   `,
   title: css`
-    color: rgba(255, 255, 255, 1);
     font-size: 48px;
+    color: #fff;
     line-height: 56px;
-    align-self: stretch;
     @media (max-width: 991px) {
-      max-width: 100%;
       font-size: 40px;
       line-height: 52px;
     }
   `,
   description: css`
-    color: rgba(236, 236, 236, 1);
+    color: #ececec;
     font-weight: 500;
     line-height: 28px;
-    margin-top: 44px;
-    @media (max-width: 991px) {
-      max-width: 100%;
-      margin-top: 40px;
-    }
+    margin-top: 36px;
   `,
-  ctaButton: css`
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 1);
-    margin-top: 47px;
-    color: rgba(0, 49, 69, 1);
-    text-align: center;
-    line-height: 1;
-    padding: 15px 18px;
+  createButton: css`
+    background-color: #fff;
+    color: #003145;
     border: none;
-    cursor: pointer;
+    border-radius: 10px;
+    padding: 15px 18px;
+    font-size: 18px;
     font-weight: 600;
-    @media (max-width: 991px) {
-      margin-top: 40px;
-    }
+    margin-top: 37px;
+    cursor: pointer;
   `,
 };
 

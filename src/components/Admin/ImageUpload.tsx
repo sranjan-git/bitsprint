@@ -28,22 +28,13 @@ const ImageUpload: React.FC<ImageUploadProps> = ({ label, onChange }) => {
         />
         <div>
           <img
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/64a043d91ac07120c0d85b178846a597d31b41a1297c2faa80e30b4a1efd65ab?placeholderIfAbsent=true&apiKey=5070ce5c9fb2416aac0a8fcf33e9cc20"
+          src="/assets/icons/2.svg"
             alt="Uploaded image preview"
             css={styles.previewImage}
           />
           <div css={styles.changeImageWrapper}>
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/a884af60445a71ddc583de0613fc6549853369a8ec80a4133e41028ef9582754?placeholderIfAbsent=true&apiKey=5070ce5c9fb2416aac0a8fcf33e9cc20"
-              alt=""
-              css={styles.changeIcon}
-            />
-            <span css={styles.changeText}>Change image</span>
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/a1498a490294a9bc8509401bd79ddc0ff69c7227e15380694ef82bcddd434d57?placeholderIfAbsent=true&apiKey=5070ce5c9fb2416aac0a8fcf33e9cc20"
-              alt=""
-              css={styles.arrowIcon}
-            />
+            
+            
           </div>
         </div>
       </div>

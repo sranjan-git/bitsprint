@@ -24,29 +24,25 @@ const BenefitCard: React.FC<BenefitCardProps> = ({
 const BenefitsSection: React.FC = () => {
   const benefits = [
     {
-      iconSrc:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/34a8577e106c9b8f343c97d0edd4201d09851ec62473ad3008de90ea43273ce6?placeholderIfAbsent=true&apiKey=5070ce5c9fb2416aac0a8fcf33e9cc20",
+      iconSrc:"/assets/icons/3.svg",
       title: "Prove your skills",
       description:
         "Gain substantial experience by solving real-world problems and pit against others to come up with innovative solutions.",
     },
     {
-      iconSrc:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/8485d6249355f3aa6aec1ab723f7c97b3ba51e8168d4ed687840cf304ed4d850?placeholderIfAbsent=true&apiKey=5070ce5c9fb2416aac0a8fcf33e9cc20",
+      iconSrc:"/assets/icons/12.svg",
       title: "Learn from community",
       description:
         "One can look and analyze the solutions submitted by the other Data Scientists in the community and learn from them.",
     },
     {
-      iconSrc:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/2f7467d935504ef2b778133964fd35dd2e90a6d2ed725189de5d8ea98b31862e?placeholderIfAbsent=true&apiKey=5070ce5c9fb2416aac0a8fcf33e9cc20",
+      iconSrc:"/assets/icons/10.svg",
       title: "Challenge yourself",
       description:
         "There is nothing for you to lose by participating in a challenge. You can fail safe, learn out of the entire experience and bounce back harder.",
     },
     {
-      iconSrc:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/98163917d0c77f40221172a1c58d5848b786d6aeb7fdee101e46e526a4ebe94e?placeholderIfAbsent=true&apiKey=5070ce5c9fb2416aac0a8fcf33e9cc20",
+      iconSrc:"/assets/icons/8.svg",
       title: "Earn recognition",
       description:
         "You will stand out from the crowd if you do well in AI challenges, it not only helps you shine in the community but also earns rewards.",
