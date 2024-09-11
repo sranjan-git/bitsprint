@@ -21,7 +21,7 @@ const ChallengeDetails: React.FC<ChallengeDetailsProps> = () => {
     <main css={styles.main}>
       <header css={styles.header}>
         <img
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/211b2f67fc48eafa8d0e9ee78b6178645c329f76efd4b1ee361cea75dbddf6c3?placeholderIfAbsent=true&apiKey=5070ce5c9fb2416aac0a8fcf33e9cc20"
+          src="/assets/icons/13.svg"
           alt="Company Logo"
           css={styles.logo}
         />

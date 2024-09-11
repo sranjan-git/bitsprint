@@ -11,7 +11,7 @@ const Banner: React.FC<BannerProps> = () => {
       <div css={contentWrapperStyles}>
         <div css={startDateStyles}>
           <img
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/bedf773f999426f7957c2645b461360cc199b4be75b560a5cc1ab4e14d6aee6a?placeholderIfAbsent=true&apiKey=5070ce5c9fb2416aac0a8fcf33e9cc20"
+          src="/assets/icons/14.svg"
             alt="Calendar icon"
             css={calendarIconStyles}
           />
@@ -23,8 +23,8 @@ const Banner: React.FC<BannerProps> = () => {
         </p>
         <div css={difficultyBadgeStyles}>
           <img
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/ca10f74a4a4f7730e2d67f223af3d669bbe966c8adaa511dda43c1d3e0631673?placeholderIfAbsent=true&apiKey=5070ce5c9fb2416aac0a8fcf33e9cc20"
-            alt="Difficulty icon"
+          src="/assets/icons/4.svg"
+          alt="Difficulty icon"
             css={difficultyIconStyles}
           />
           <span>Easy</span>
