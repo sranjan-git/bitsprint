@@ -59,26 +59,6 @@ This is a simple front-end application designed for an EdTech company, where org
 3. **Manage Hackathons**: Organizers can edit or delete existing hackathons from the list or the detailed view page.
 4. **Timers**: Active and upcoming hackathons will display timers indicating time until the end or start.
 
-## Project Structure
-
-```
-├── src
-│   ├── components
-│   │   ├── HackathonList.jsx      # Component to display the list of hackathons
-│   │   ├── HackathonDetails.jsx   # Component to display hackathon details
-│   │   └── HackathonForm.jsx      # Component for creating/editing hackathons
-│   ├── utils
-│   │   └── timer.js               # Utility to handle countdown timers
-│   ├── assets
-│   │   └── images                 # Directory for hackathon images
-│   ├── App.jsx                    # Main application file
-│   ├── index.js                   # Entry point
-├── public
-│   └── index.html                 # HTML template
-├── package.json                   # Project dependencies and scripts
-└── README.md                      # Project documentation
-```
-
 ## Technologies Used
 
 - **React.js**: For building the user interface and components.
