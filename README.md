@@ -1,46 +1,101 @@
-# Getting Started with Create React App
+# Hackathon Dashboard App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+This is a simple front-end application designed for an EdTech company, where organizers can create, edit, and delete hackathons. The application enables the management of hackathons by providing features like sorting, filtering, and searching hackathons. It also shows the status of hackathons (active, upcoming, past) with timers for easy tracking. Participants can view hackathons and access problem statements to make submissions.
 
-## Available Scripts
+## Features
+### Organizer Dashboard
+- **Create, Edit, and Delete Hackathons**: Organizers can create new hackathons and edit or delete existing ones.
+- **Hackathon Data**: Each hackathon contains the following information:
+  - Name
+  - Start Date
+  - End Date
+  - Description
+  - Image
+  - Level (easy, medium, hard)
+  
+### Hackathon Listing
+- **Search**: Search hackathons by name.
+- **Sort**: Sort hackathons by newest first or oldest first.
+- **Filter**: Filter hackathons by difficulty level (easy, medium, hard) or status (active, upcoming, past).
+- **Status Indicators**:
+  - **Active**: Displays a countdown timer to indicate when the hackathon will end.
+  - **Upcoming**: Displays a countdown timer to indicate when the hackathon will start.
+  - **Past**: Displays the start and end date of the hackathon.
+  
+### Hackathon Details Page
+- **View Hackathon Details**: Clicking on a hackathon in the list will take the user to a detailed page with all the hackathon information.
+- **Edit/Delete Buttons**: On the hackathon details page, organizers can edit or delete the hackathon.
 
-In the project directory, you can run:
+## Installation
 
-### `npm start`
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/hackathon-dashboard-app.git
+   ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+2. **Navigate to the project directory**:
+   ```bash
+   cd hackathon-dashboard-app
+   ```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+3. **Install dependencies**:
+   Run the following command to install all required dependencies:
+   ```bash
+   npm install
+   ```
 
-### `npm test`
+4. **Run the development server**:
+   Start the app using the following command:
+   ```bash
+   npm start
+   ```
+   The app will be available on [http://localhost:3000](http://localhost:3000).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Usage
 
-### `npm run build`
+1. **Create Hackathons**: Use the dashboard to create new hackathons by filling in the required fields (name, dates, description, image, and level).
+2. **View Hackathons**: See a list of all created hackathons, with options to sort, filter, and search.
+3. **Manage Hackathons**: Organizers can edit or delete existing hackathons from the list or the detailed view page.
+4. **Timers**: Active and upcoming hackathons will display timers indicating time until the end or start.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Project Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+├── src
+│   ├── components
+│   │   ├── HackathonList.jsx      # Component to display the list of hackathons
+│   │   ├── HackathonDetails.jsx   # Component to display hackathon details
+│   │   └── HackathonForm.jsx      # Component for creating/editing hackathons
+│   ├── utils
+│   │   └── timer.js               # Utility to handle countdown timers
+│   ├── assets
+│   │   └── images                 # Directory for hackathon images
+│   ├── App.jsx                    # Main application file
+│   ├── index.js                   # Entry point
+├── public
+│   └── index.html                 # HTML template
+├── package.json                   # Project dependencies and scripts
+└── README.md                      # Project documentation
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies Used
 
-### `npm run eject`
+- **React.js**: For building the user interface and components.
+- **CSS**: For styling the app.
+- **JavaScript**: For app logic and timer functionalities.
+- **HTML**: For structuring the app.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Future Enhancements
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Participant Dashboard**: Allow participants to register and submit solutions to hackathons.
+- **User Authentication**: Secure access for organizers and participants.
+- **Backend Integration**: Connect the app to a backend service to persist data.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## License
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+This project is licensed under the MIT License.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Feel free to fork and improve this project. Contributions are welcome!
