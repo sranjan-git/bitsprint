@@ -5,7 +5,7 @@ import { css } from "@emotion/react";
 
 interface ButtonProps {
   label: string;
-  type?: "button" | "submit" | "reset"; // Add the optional 'type' prop
+  type?: "button" | "submit" | "reset"; 
 }
 
 const buttonStyles = css`
