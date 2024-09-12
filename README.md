@@ -1,4 +1,4 @@
-# Hackathon Dashboard App
+# bitsprint - Hackathon Dashboard App
 
 ## Overview
 This is a simple front-end application designed for an EdTech company, where organizers can create, edit, and delete hackathons. The application enables the management of hackathons by providing features like sorting, filtering, and searching hackathons. It also shows the status of hackathons (active, upcoming, past) with timers for easy tracking. Participants can view hackathons and access problem statements to make submissions.
@@ -31,12 +31,12 @@ This is a simple front-end application designed for an EdTech company, where org
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/hackathon-dashboard-app.git
+   git clone https://github.com/your-username/bitsprint.git
    ```
 
 2. **Navigate to the project directory**:
    ```bash
-   cd hackathon-dashboard-app
+   cd bitsprint
    ```
 
 3. **Install dependencies**:
